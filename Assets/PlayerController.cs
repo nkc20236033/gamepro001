@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
    
     void Start()
     {
-        Application.targetFrameRate = 100;
+        Application.targetFrameRate = 60;
     }
 
     void Update()
