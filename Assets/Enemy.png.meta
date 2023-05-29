@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 95c679c9baa2e2e4690f2a2101c7cb21
+guid: 9b624433073475743a58e522a4dd6a05
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -133,8 +133,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27923b6049425134b91354a07d7d4df7
-      internalID: -1851374354
+      spriteID: 00a3397c266dc2144842a33c991e04b9
+      internalID: 325167103
       vertices: []
       indices: 
       edges: []
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25fbf0155d8fa5041a3630244b8ddd5a
-      internalID: 30360350
+      spriteID: 5cf6aea10e7369c448ccd8f9804b3fee
+      internalID: -350473635
       vertices: []
       indices: 
       edges: []
@@ -175,8 +175,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94752e176f340d14b81fb8996e799e41
-      internalID: 1383778842
+      spriteID: 84bed668e16cfe44389ee43301e47ddf
+      internalID: 766929417
       vertices: []
       indices: 
       edges: []
@@ -196,8 +196,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3aa4192e695106c409c43c3f6645ed74
-      internalID: -1525473201
+      spriteID: dff75b9233a127c489a598cc96dba171
+      internalID: 763916251
       vertices: []
       indices: 
       edges: []
@@ -217,8 +217,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7367e1389f536bd47abdead7fd093627
-      internalID: 2064499094
+      spriteID: 9d07e52348abac74081b6ef78db4d971
+      internalID: 1933616625
       vertices: []
       indices: 
       edges: []
@@ -238,8 +238,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4e93634c8d58ba4f96d28a5de61ac0b
-      internalID: 1201104245
+      spriteID: 7f680e8b89c7c0b4fb90d506f1922e25
+      internalID: -920392265
       vertices: []
       indices: 
       edges: []
@@ -255,12 +255,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Enemy_0: -1851374354
-      Enemy_1: 30360350
-      Enemy_2: 1383778842
-      Enemy_3: -1525473201
-      Enemy_4: 2064499094
-      Enemy_5: 1201104245
+      Enemy_0: 325167103
+      Enemy_1: -350473635
+      Enemy_2: 766929417
+      Enemy_3: 763916251
+      Enemy_4: 1933616625
+      Enemy_5: -920392265
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
