@@ -1,24 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Net;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 
-public class GameDirector1 : MonoBehaviour
+public class gamedirec: MonoBehaviour
 {
-    GameObject hp;
-    // Start is called before the first frame update
+    GameObject gauge;
+    Å@[SerializeField]float time;//éûä‘ä÷òAÇÃïœêî
+    Å@[SerializeField]float Limit;
     void Start()
     {
-        this.hp = GameObject.Find("ImageHP");
+    gauge = GameObject.Find("HP");
     }
     public void DecreaseHp()
     {
-        this.hp.GetComponent<Image>().fillAmount -= 0.1f;
+        gauge.GetComponent<Image>().fillAmount -= 0.1f;
+        time -= 1f / Limit;
     }
-    // Update is called once per frame
+   
     void Update()
     {
-
+     time -=1f/Limit* Time.deltaTime;
+        
+        gauge.GetComponent<Image>().fillAmount -= 1f / Limit * Time.deltaTime;
+        Debug.Log(time);
     }
+   
+    
 }

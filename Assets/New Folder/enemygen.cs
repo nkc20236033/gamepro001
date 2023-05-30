@@ -15,14 +15,15 @@ public class enemygen : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {//スポーン間隔の設定
         this.delta += Time.deltaTime;
         if(this.delta> this.span)
         {
             this.delta = 0;
+            //出現位置の設定
             GameObject go = Instantiate(enemy);
-            int py = Random.Range(-5, 5);
-            go.transform.position = new Vector3(10,py,0);
+            int ey = Random.Range(-5, 5);
+            go.transform.position = new Vector3(10,ey,0);
         }
             }
 }

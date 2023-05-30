@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.GlobalIllumination;
 
 public class PlyerCon : MonoBehaviour
 {
@@ -17,9 +18,15 @@ public class PlyerCon : MonoBehaviour
 
     void Update()
     {
-        float speed = 0.09f;
-        float x = Input.GetAxisRaw("Horizontal");
-        float y = Input.GetAxisRaw("Vertical");
-        transform.position += new Vector3(x * speed, y * speed, 0);
+        float speed = 0.05f;
+        float px = Input.GetAxisRaw("Horizontal");
+        float py = Input.GetAxisRaw("Vertical");
+        transform.position += new Vector3(px * speed, py * speed, 0);
+
+        transform.position =new Vector3
+            ( //ƒGƒŠƒAŽw’è‚µ‚ÄˆÚ“®‚·‚é
+             Mathf.Clamp( transform.position.x + px, -10.0f, 10.0f ),
+             Mathf.Clamp( transform.position.y + py, -4.5f, 4.5f )
+             );
     }
 }

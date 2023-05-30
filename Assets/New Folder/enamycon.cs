@@ -16,7 +16,7 @@ public class enamycon : MonoBehaviour
     void Update()
     {
         transform.Translate(-0.1f, 0, 0);
-        if (transform.position.x > -10.0f)
+        if (transform.position.x < -10.0f)
         {
             Destroy(gameObject);
         }
@@ -28,7 +28,9 @@ public class enamycon : MonoBehaviour
         float r2 = 1.0f;
         if (d < r1 + r2)
         {
-            Destroy (gameObject);
+            GameObject obj = GameObject.Find("gamedirec");
+            obj.GetComponent<gamedirec>().DecreaseHp();
+            Destroy(gameObject);
         }
 
 
