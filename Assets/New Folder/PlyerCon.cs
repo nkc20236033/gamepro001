@@ -6,12 +6,13 @@ using UnityEngine.Experimental.GlobalIllumination;
 public class PlyerCon : MonoBehaviour
 {
     Vector3 dir = Vector3.zero;  // ˆÚ“®•ûŒü‚ğ•Û‘¶‚·‚é•Ï”
-   
 
+    Animator anim;
     // Start is called before the first frame update
     void Start()
     {
         Application.targetFrameRate = 60;
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -28,5 +29,18 @@ public class PlyerCon : MonoBehaviour
              Mathf.Clamp( transform.position.x + px, -10.0f, 10.0f ),
              Mathf.Clamp( transform.position.y + py, -4.5f, 4.5f )
              );
+       
+        if (py == 0)
+        {
+            anim.Play("Player");
+        }
+        else if (py == 1)
+        {
+            anim.Play("PlayerL");
+        }
+        else
+        {
+            anim.Play("PlayerP");
+        }
     }
 }

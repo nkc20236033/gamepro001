@@ -4,6 +4,7 @@ using System.Net;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class gamedirec: MonoBehaviour
@@ -26,7 +27,11 @@ public class gamedirec: MonoBehaviour
      time -=1f/Limit* Time.deltaTime;
         
         gauge.GetComponent<Image>().fillAmount -= 1f / Limit * Time.deltaTime;
-        Debug.Log(time);
+        if (gauge.GetComponent<Image>().fillAmount <= 0)
+        {
+            SceneManager.LoadScene(1);
+        }
+        
     }
    
     
