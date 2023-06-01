@@ -5,7 +5,7 @@ using UnityEngine;
 public class enemygen : MonoBehaviour
 {
     public GameObject enemy;
-    float span  = 0.75f;
+    float span  = 1.0f;
     float delta = 0;
     // Start is called before the first frame update
     void Start()
@@ -22,8 +22,8 @@ public class enemygen : MonoBehaviour
             this.delta = 0;
             //èoåªà íuÇÃê›íË
             GameObject go = Instantiate(enemy);
-            int ey = Random.Range(-6, 6);
-            go.transform.position = new Vector3(11,ey,0);
+            int ey = Random.Range(-5, 5);
+            go.transform.position = new Vector3(10,ey,0);
         }
             }
 }
