@@ -6,14 +6,15 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-
 public class gamedirec: MonoBehaviour
 {
     GameObject gauge;
     @[SerializeField]float time;//ŠÔŠÖ˜A‚Ì•Ï”
     @[SerializeField]float Limit;
+    [SerializeField] float leng;
     void Start()
     {
+        leng = 5;
     gauge = GameObject.Find("HP");
     }
     public void DecreaseHp()
